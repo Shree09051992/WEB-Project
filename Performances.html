@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performances</title>
+    <style>
+        body{
+            background-color: firebrick;
+        }
+        header{
+            background-color: gold;
+            height:50px;
+            padding:10px 10px 10px 10px;
+            color:maroon;
+            text-align: center;
+            font-weight: bold;
+            font-size: medium;
+            animation:headerAnim 1s steps(5) 0s infinite;
+        }
+        @keyframes headerAnim {
+            from{
+                color:maroon;
+                font-weight: bold;
+                font-size: medium;
+            }
+            to{
+                color: chocolate;
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+        }
+        #mainbody{
+            display: flex;
+            height:400px;
+            width:auto;
+            background-color: goldenrod;
+            margin-top: 40px;
+
+        }
+        .inner{
+            width:300px;
+            height:300px;
+            background-color: sienna;
+            margin-top: 30px;
+            margin-left: 10px;
+            position:static;
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
+
+        }
+        .inner:hover{
+            transform:translate(10px);
+        }
+        img{
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+        p{
+          font-family: 'Times New Roman', Times, serif;
+          font-size: large;
+          margin-left: 5px;
+          color: beige;
+        }
+        footer{
+            margin-top: 70px;
+            background-color: #ffd700;
+            font-size: small;
+            height:100px;
+            width:auto;
+            text-align: center;
+            
+        }
+        a{
+            color:maroon;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: small;
+            animation:textAnimate 3s ease-in-out 1s infinite reverse;
+        }
+        @keyframes textAnimate 
+        {
+            from{
+                text-decoration: none;
+                font-weight: bold;
+                font-size: small;
+            }
+            to{
+                text-decoration: underline;
+                font-weight: bolder;
+                font-size: larger;
+            }
+        }
+        #logo{
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            animation:logoAnim 2s ease-in 0s infinite normal;
+        }
+        @keyframes logoAnim 
+        {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>My Performances</header>
+    <audio src="Bhupali_tabla.mp3" type="audio/mpeg" autoplay></audio>
+    <div id="mainbody">
+        <div class="inner"><img src="Daga_Nikunj.jpg" alt="inhouse concert" ><p>An in-house concert held by <b>Chinton</b> on 19th March 
+            2023 at Daga Nikunj Ballygunj.It was a series of Programs based on Indian Classical genre</p> </div>
+            <div class="inner"><img src="TrigunaSen_Audi.jpg" alt="Classical Performance"><p>Its another concert of the above series 
+                held at Triguna Sen Auditorium.
+            </p> </div>
+        <div class="inner"><img src="ICCR.jpg" alt="A casual performance"><p>A casual performance on request of Mrs Sreemati Mukherjeeat ICCR 
+            on occassion of her book release.
+        </p>  </div>
+        <div class="inner"><img src="Golpark_RKM.jpg" alt="Tanpura"><p>Performed on stage with my Guru accompanying him in Tanpura 
+            at a prestigious program in Golpark Ramkrishna Mission auditorium
+        </p> </div>
+        <div class="inner">
+            <img src="performing_with_guru.jpg" alt="Bankura"> <p>
+                Performed on stage with my Guru accompanying him in Tanpura 
+            at a prestigious program in Bankura.
+            </p>
+        </div>
+    </div>
+    <footer> <img id= "logo" src="Logo.jpg" alt="mylogo"> <br>
+        <a href="Index.html">Go to Homepage</a>  </footer>
+
+</body>
+</html>

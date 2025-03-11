@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swar-Bandhani</title>
+    <style>
+        body{
+            background-image: url("swar_bandhani_logo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header{
+            background-color: maroon;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:gold;
+            height:80px;
+            width:auto;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+
+        }
+        #logo{
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            animation:logoAnim 2s ease-in-out 0s infinite;
+        }
+        @keyframes logoAnim{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        #mainbody{
+            margin-top: 10px;
+            height:500px;
+            width:800px;
+            background-color: maroon;
+            position: absolute;
+            right:50px;
+            text-align: center;
+        
+        }
+        p{
+            color:beige;
+            font-size: medium;
+            animation: textAnim 2s ease-out 0s infinite normal;
+        }
+        p:hover{
+            font-size: larger;
+            font-weight: bold;
+        }
+        #call{
+            height:20px;
+            width: 20px;
+            border-radius: 50%;
+            margin-left: 5px;
+            color: bisque;
+        }
+        u{
+            margin-left: 5px;
+        }
+        a{
+            color:bisque;
+            text-decoration: none;
+        }
+        footer{
+            background-color: maroon;
+            height: 50px;
+            width:auto;
+            color: bisque;
+            margin-top: 50px;
+        }
+        #enroll{
+            font-style: oblique;
+            color:yellow;
+        }
+        @media (min-width:200) and (max-width:800) {
+            body{
+                font-size: small;
+            }
+            
+        }
+       </style>
+</head>
+<body>
+    <header>Swar-Bandhani:A learning Experience<br>
+        <audio src="Bhupali_tabla.mp3" type="audio/mpeg"autoplay></audio>
+        <img id="logo" src="Logo.jpg"alt="mylogo">
+    </header>
+    <div id="mainbody"><p>Swar-Bandhani,a centre for basic learning of vocal music.Students are guided with utmost care and love.
+        They are treated in friendly manner so that they can easily share their thoughts with their guide. Practice sessions are held in 
+        almost regular intervals.it is not only stuck in single country rather is spreaded beyond through online classes.Snippets of their 
+        learning is shared here.
+    </p>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FMuzicallyYourz%2Fvideos%2F959511126011736%2F&show_text=false&width=267&t=0" width="200" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FMuzicallyYourz%2Fvideos%2F769149504818341%2F&show_text=false&width=476&t=0" width="200" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <video width="200" height="200" src="Practice sessions.mp4" controls type="video/mp4"></video>
+    <video width="150" height="200" src="Practice_sessions.mp4" controls type="video/mp4"></video>
+    <p id="Contact-details">To Begin your career in classical & Semi-Classical Vocals <a id="enroll" href="Enroll.html">Enroll Here</a><br>Reach out to <img id="call" src="call_symbol.jpeg" alt="call Me"><u>9748730572</u><br>
+    <img id="call" src="whatsapp_logo.jpeg" alt="Message"> <u>8910303273 </u><br>
+    <img id="call" src="Mail_logo.jpeg" alt="Connect"><u><a href="mailto:chandrimamukherjee199416@gmail.com">Chandrima Mukherjee</a></u>
+    </p>
+    <footer><a href="Index.html">Go To Homepage</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievement</title>
+    <style>
+      header{
+        background-color: brown;
+        color: beige;
+        height:50px;
+        width:auto;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        animation:headerAnim 1s steps(5) 0s infinite; 
+      }
+      @keyframes headerAnim {
+        from{
+            font-size: x-large;
+            color:beige;
+            font-weight: bold;
+        }
+        to{
+            font-size: xx-large;
+            color: blanchedalmond;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+      }
+      
+      body{
+        background-color: bisque;
+      }
+     #mainbody{
+        display: flex;
+        position: relative;
+        height:400px;
+        width:auto;
+        background-color: brown;
+        margin-top: 20px;
+        }
+     .box{
+        display: inline-block;
+        position:sticky;
+        height: 300px;
+        width:200px;
+        background-color: bisque;
+        margin-left: 60px;
+        margin-top: 30px;
+        text-align: center;
+        padding:10px 10px 10px 10px;
+     }
+     .box:hover{
+        transform:scale3d(2,2,2);
+     }
+  img{
+    height:100px;
+    width:100px;
+    padding:15px;
+    margin-left: 20px;
+  }
+  p{
+    font-size: small;
+    font-family:'Times New Roman', Times, serif;
+    color: maroon;
+  }
+  footer{
+    height:100px;
+    width:auto;
+    margin-top: 50px;
+    background-color: brown;
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
+    
+  }
+  a{
+    text-decoration: none;
+    color: bisque;
+    font-size: medium;
+    animation:footerAnim 1s ease-in-out 0s infinite reverse;
+}
+
+  @keyframes footerAnim{
+    from{
+        font-size: medium;
+        font-style: normal;
+        font-weight: bold;
+        color: bisque;
+
+    }
+    to{
+        font-size: large;
+        font-weight: bolder;
+        font-style: oblique;
+        color: chocolate;
+    }
+  }
+  #logo{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+  }
+  @media (min-width:200) and (max-width:800){
+    body{
+      font-size: small;
+    }
+  }
+
+    </style>
+</head>
+<body>
+    <header>Achievements</header>
+    <audio src="Megh_tabla.mp3" type="audio/mpeg"autoplay></audio>
+    <div id="mainbody">
+        <div class="box"><img src="certificate1.jpg" alt="3rd position in Murari Sangeet Sammelan">
+        <p>Secured the third position in Chetla Murari Smriti Sangeet Sammelan in 2022 in the Category of Khayal</p>
+        </div>
+        
+        <div class="box">
+            <img src="achievement2.jpg" alt="Momento">
+            <p>Getting rewarded with a momento for securing the first position in Women Times Rabindra Utsav held in 2020 in senior 
+                category</p>
+        </div>
+        <div class="box">
+            <img src="achievement3.jpg" alt="Geetika">
+            <p>Securing a position in Geetika music Competition</p>
+        </div>
+        <div class="box"><img src="certificate2.jpg" alt="Sanskritiki Kolkata">
+        <p>Rewarded for being the winner "Ashoketoru Smriti Puroskar 2020" in music competition held in 2022</p>   </div>
+
+        <div class="box"><img src="NIIT.jpg"  alt="social media marketing" >
+        <p>Completing a course in Social Media Mrketing and securing an outstanding position under the roof of NIIT academic council</p> </div>
+    </div>
+    <footer> <img id= "logo" src="Logo.jpg" alt="mylogo"> <br>
+        <a href="Index.html">Go to Homepage</a>  </footer>
+</body>
+</html>
